@@ -3,7 +3,7 @@ let primes = require('./lib/primes.json')
 let Papa = require("papaparse")
 let fs = require('fs')
 let mods = [
-    'modp1','modp2'
+    'modp1','modp2','modp5','modp14'
  ];
 
 
