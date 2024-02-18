@@ -48,17 +48,18 @@ function execute_deffie_hellman(){
                         "modp":mod,
                        "Result":`${pub1 == pub2}`,
                         "Prime": `${p1}`,
+                        "Public Key":"2",
                         "Error for Prime Chosen": `${dh1.verifyError}`,
                     
                     
                         "Name_1":"Alice",
                         "Secret Key_1": `${s1}`,
-                        "Public Key_1": `${public_key1}`,
+                        "(Public_Key)^(Secret Key_1)%Prime": `${public_key1}`,
                         "Shared Secret_1":`${pub1}`,
                     
                         "Name_2":"Bob",
                         "Secret Key_2" : `${s2}`,
-                        "Public Key_2": `${public_key2}`,
+                        "(Public_Key)^(Secret Key_2)%Prime": `${public_key2}`,
                         "Shared Secret_2":`${pub2}`
                     }
                 
